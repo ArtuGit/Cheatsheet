@@ -1,0 +1,7 @@
+name = ITCross Test 
+description = Test procedures for developers.
+package = ITCross
+core = 7.x
+version = "7.x-1.0-dev"
+files[] = itcross_test.module
+dependencies[] = itcross

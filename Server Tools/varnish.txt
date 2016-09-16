@@ -1,0 +1,5 @@
+http://www.isvarnishworking.com/
+
+How to test Varnish using cURL
+curl -I http://127.0.0.1/
+

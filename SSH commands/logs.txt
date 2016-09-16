@@ -1,0 +1,8 @@
+#See the logs, the example
+tail error.log
+
+#Using an older syntax (still used in older version of Sun Solaris as the -n option is not supported), the last 20 lines and the last 50 bytes of filename can be shown with the following command:
+
+tail -20 filename
+tail -50c filename
+

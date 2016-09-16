@@ -1,0 +1,5 @@
+#Change remote repo under another name, example
+git pull https://sergei76@bitbucket.org/xlibkind/myngl.git
+
+#The strange way for .htaccess exception
+git update-index --assume-unchanged .htaccess

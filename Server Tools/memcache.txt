@@ -1,0 +1,7 @@
+[Stats]
+#Port
+telnet localhost 11211
+stats
+#Socket
+echo -e 'stats' | nc -U /path/to/memcached.sock
+
