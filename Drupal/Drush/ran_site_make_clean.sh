@@ -1,2 +1,0 @@
-drush dl drupal-7 -v -d --destination=".." --drupal-project-rename="$(basename `pwd`)"
-drush site-install standard --db-url='mysql://drupal:drupal@localhost/drupal' --db-prefix=d7_ --site-name=Test --account-name=AdminTech --account-pass=clean00 --account-mail=artuon@gmail.com
