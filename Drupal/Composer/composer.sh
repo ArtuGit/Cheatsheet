@@ -5,7 +5,12 @@
 composer install
 
 # Add modules and themes to a website
-composer require drupal/<modulename>
+composer require drupal/<modulename>:<version>
+##For example:
+
+composer require drupal/ds
+composer require drupal/ctools:3.0.0-alpha26
+composer require drupal/token:1.x-dev
 
 # Update a core
 composer update drupal/core --with-dependencies
