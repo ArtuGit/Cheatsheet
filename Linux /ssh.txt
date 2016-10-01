@@ -1,0 +1,6 @@
+# Creates a new ssh key, using the provided email as a label
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+
+# You can copy the public key into the new machine's authorized_keys file with the ssh-copy-id command.
+ssh-copy-id user@123.45.56.78
