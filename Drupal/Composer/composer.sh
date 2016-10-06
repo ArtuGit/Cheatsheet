@@ -6,11 +6,19 @@ composer install
 
 # Add modules and themes to a website
 composer require drupal/<modulename>:<version>
+
 ##For example:
 
+composer require drupal/bootstrap:8.*
 composer require drupal/ds
 composer require drupal/ctools:3.0.0-alpha26
 composer require drupal/token:1.x-dev
 
 # Update a core
 composer update drupal/core --with-dependencies
+
+# Delete a module (after uninstalling)
+composer remove drupal/<modulename>
+
+# Show an available package
+composer show drupal/<modulename>a

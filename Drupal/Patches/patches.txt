@@ -1,0 +1,31 @@
+[Download]
+curl -O https://www.drupal.org/files/[patch-name].patch
+
+Alternatively, use `wget` to download the file
+wget https://www.drupal.org/files/[patch-name].patch
+
+[Git]
+
+# Apply a patch to a project's repository:
+# '-v' for verbose
+git apply -v path/file.patch
+
+# You can also use --index setting to track modified files: 
+git apply -v --index path/file.patch
+
+# Reverse the patch:
+git apply -R path/file.patch
+
+[Single line]
+curl https://www.drupal.org/files/[patch-name].patch | git -v apply -
+
+[Without Git]
+# Apply a patch
+patch < file.patch
+
+# The -p option tells patch how many leading prefixes to strip. For patches created using git, -p1 is normally the right option, and is the default for git apply. If that doesn't work, try either of the above commands with -p0 instead.
+patch -p1 < path/file.patch
+
+
+# Reverse the patch (If your patch was applied with the -p0 option, use that instead.)
+patch -p1 -R < path/file.patch
