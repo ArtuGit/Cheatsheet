@@ -1,0 +1,14 @@
+#Files
+find -iname "filename.ext"
+
+# Content
+grep "some_text" -ir
+-r or -R is recursive
+-n is line number
+-w stands match the whole word
+-l (lower-case L) can be added to just give the file name of matching files
+-i stands for ignore case (optional in your case)
+/ stands for starting at the root of your machine.
+
+ack "some_text"
+
