@@ -22,3 +22,4 @@ composer remove drupal/<modulename>
 
 # Show an available package
 composer show drupal/<modulename>a
+composer show | grep drupal/console
