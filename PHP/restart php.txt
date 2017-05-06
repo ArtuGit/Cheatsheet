@@ -1,0 +1,2 @@
+#FPM
+/etc/init.d/php5-fpm restart
