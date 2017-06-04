@@ -1,0 +1,9 @@
+<?php
+
+require_once('itcross.hook.inc');
+require_once('itcross.fields.inc');
+require_once('itcross.form.inc');
+require_once('itcross.block.inc');
+require_once('itcross.views.inc');
+
+

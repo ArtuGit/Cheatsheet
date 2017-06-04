@@ -1,0 +1,6 @@
+name = ITCross Module 
+description = Created by ITCross for ...
+package = ITCross
+core = 7.x
+version = "7.x-1.2-dev"
+;dependencies[] = module_name
