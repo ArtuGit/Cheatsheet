@@ -4,3 +4,15 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 # You can copy the public key into the new machine's authorized_keys file with the ssh-copy-id command.
 ssh-copy-id user@123.45.56.78
+
+
+#SSH Copy
+Syntax:
+
+scp <source> <destination>
+To copy a file from B to A while logged into B:
+
+scp /path/to/file username@a:/path/to/destination
+To copy a file from B to A while logged into A:
+
+scp username@b:/path/to/file /path/to/destination
