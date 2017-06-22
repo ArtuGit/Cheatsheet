@@ -1,0 +1,2 @@
+#Rsync from an remote server
+rsync -avzP user@ip:/home/user/directory/ /home/user/directory
