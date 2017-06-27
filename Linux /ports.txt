@@ -1,0 +1,3 @@
+#How to check if port is in use on Linux:
+sudo lsof -i -P -n | grep LISTEN 
+sudo netstat -tulpn | grep LISTEN
