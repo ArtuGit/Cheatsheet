@@ -3,3 +3,10 @@ git pull https://yourname@bitbucket.org/org/repo.git
 
 # The strange way for .htaccess exception
 git update-index --assume-unchanged .htaccess
+
+
+#To delete all local branches that are already merged into the currently checked out branch:
+#You can see that master and dev are excluded in case they are an ancestor.
+
+git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d
+
