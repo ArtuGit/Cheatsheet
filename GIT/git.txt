@@ -10,3 +10,5 @@ git update-index --assume-unchanged .htaccess
 
 git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d
 
+#To sync with remote branches
+git -c core.quotepath=false fetch origin --progress --prune
