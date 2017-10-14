@@ -1,5 +1,5 @@
-## How to check is Apache2 is stopped in Ubuntu?
-`ps aux | grep httpd |`
+## How to check is Apache2 is stopped?
+`ps aux | grep httpd | grep -v grep`
 `service apache2 status`
 
 
