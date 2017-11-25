@@ -1,10 +1,14 @@
-### Standard ###
-df -h
+### Disks Info
+`df -h`
 
-### ncdu ###
-sudo apt install ncdu
-ncdu
-ssh -C user@system ncdu -o- / | ./ncdu -f-
+### Most big directories
+`du -Sh | sort -rh | head -5`
 
-### gui ###
+### NCDU 
+`sudo apt install ncdu`
+`ncdu`
+`ssh -C user@system ncdu -o- / | ./ncdu -f-`
+
+
+### GUI
 Disk Usage Analyzer (aka Baobab)
