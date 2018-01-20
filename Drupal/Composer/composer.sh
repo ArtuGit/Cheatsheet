@@ -14,6 +14,9 @@ composer require drupal/ds
 composer require drupal/ctools:3.0.0-alpha26
 composer require drupal/token:1.x-dev
 
+# Update all
+composer update --with-dependencies
+
 # Update a core
 composer update drupal/core --with-dependencies
 
