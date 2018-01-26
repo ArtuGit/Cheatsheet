@@ -1,0 +1,2 @@
+### Restart IBus
+ibus-daemon &
