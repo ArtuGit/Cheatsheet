@@ -1,0 +1,16 @@
+// Download the part of the site
+
+Commands:
+```
+wget -r -nc -np -t 1 -l 2 -E -p -k -K -R '*.tar, *.deb, *.gz, *.rpm, *.msi, *.awk' -X 'node, support-tickets, news-tags, user, news, services, sitemap, resellers, resources, partners, irc, contact-us, careers, about-us' -e --progress=dot robots=off https://nxlog.co/products
+
+sed -i -e 's/\/sites\/default\/files\//sites\/default\/files\//g' nxlog.co/*.html
+sed -i -e 's/"\/sites\/default\/files\//"..\/sites\/default\/files\//g' nxlog.co/products/*.html
+sed -i -e 's/"\/sites\/default\/files\//"..\/..\/sites\/default\/files\//g' nxlog.co/products/nxlog-community-edition/*.html
+sed -i -e 's/"\/sites\/default\/files\//"..\/..\/sites\/default\/files\//g' nxlog.co/products/nxlog-enterprise-edition/*.html
+sed -i -e 's/"\/sites\/default\/files\//"..\/..\/sites\/default\/files\//g' nxlog.co/products/nxlog-manager/*.html
+```
+
+Then put the file with jQuery to `nxlog.co/sites/default/files/advagg_js/`
+
+The file name is dynamic. Current file name `js__V-bePUuALhOYosSyzyw76brvXga-Gz1WP2vouF5Fiuk__Uemm5Vpx92vWaB0dvqsWFc3sj1AwOLBsxpeW6pF6dDM__4JyiSkGgLDScV2rr7q1J8PCjGpGgx76VcenCd_BUMqc.js`.
