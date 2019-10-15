@@ -1,22 +1,22 @@
-#Clean 'flood' table
+# Clean 'flood' table
 drush php-eval 'db_query("DELETE FROM flood");'
 
-#Change user's password
+# Change user's password
 drush user-password USERNAME --password="SOMEPASSWORD"
 or abbreviated
 drush upwd USERNAME --password="SOMEPASSWORD"
 
-#Reset user's password
+# Reset user's password
 drush uli some-username
 
-#WatchDog
+# WatchDog
 drush ws \
 --extended \
 --format=yaml \
 --type=php \
 --count=100
 
-#Features
+# Features
 `features-update` (`fu`)
 The update operation will produce a modified version of your feature module, which matches up with the configuration found in the database.
 
@@ -24,3 +24,5 @@ The update operation will produce a modified version of your feature module, whi
 Revert changes your site configuration (living in the database) to match up with the definitions in the feature module code.
 
 
+# Run a single specific Drupal update
+drush php-eval "module_load_install('MYMODULE'); MYMODULE_update_NUMBER();"
