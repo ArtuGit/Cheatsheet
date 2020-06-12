@@ -2,9 +2,12 @@
 drush php-eval 'db_query("DELETE FROM flood");'
 
 # Change user's password
-drush user-password USERNAME --password="SOMEPASSWORD"
+Drush < 9
+`drush user-password USERNAME --password="SOMEPASSWORD"`
 or abbreviated
-drush upwd USERNAME --password="SOMEPASSWORD"
+`drush upwd USERNAME --password="SOMEPASSWORD"`
+Drush 9
+`drush user:password someuser "SOMEPASSWORD"`
 
 # Reset user's password
 drush uli some-username
@@ -23,6 +26,10 @@ The update operation will produce a modified version of your feature module, whi
 `features-revert` (`fr`)
 Revert changes your site configuration (living in the database) to match up with the definitions in the feature module code.
 
+Drupal 8
+
+`features-import` (`fim`)
+Import a module config into your site.
 
 # Run a single specific Drupal update
 drush php-eval "module_load_install('MYMODULE'); MYMODULE_update_NUMBER();"
