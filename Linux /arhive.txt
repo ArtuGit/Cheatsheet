@@ -1,5 +1,5 @@
 #Pack
-tar -zcvf archive-name.tar.gz /directory-name
+tar -zcvf archive-name.tar.gz directory-name --exclude=.idea
 #UnPack
 tar -xvzf archive-name.tar.gz.tar.gz
 
