@@ -1,7 +1,7 @@
 # How to see all node process
 ps aux | grep node
 
-# Proces on a specific port
+# Process on a specific port
 lsof -i tcp:3000
 
 # Kill ths specific node process
