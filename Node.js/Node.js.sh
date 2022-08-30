@@ -9,4 +9,3 @@ kill -9 PROCESS_ID
 
 # Kill all node process. Be sure!
 killall node
-
