@@ -1,3 +1,6 @@
+List all imagees:
+`docker images --all`
+
  List running containers:
  `docker ps`
  or
