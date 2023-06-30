@@ -8,6 +8,8 @@ Remove a image
 
 Build an image (in a current directory)
 `docker build -t IMAGE_NAME .`
+prepare to publish with a tag
+`docker build -t <your-dockerhub-username>/<image-name>:<tag> .`
 
 ### Containers
 
@@ -82,3 +84,11 @@ Remove all unused network
 ### Logs
 Fetch the logs of a container
 `docker logs CONTAINER_ID`
+
+
+### Tags
+Set a tag
+`docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]`
+
+### Docker Hub
+docker push <your-dockerhub-username>/<image-name>:<tag>
