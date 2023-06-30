@@ -9,7 +9,6 @@ Remove a image
 Build an image (in a current directory)
 `docker build -t IMAGE_NAME .`
 
-
 ### Containers
 
 Run a container by an image (with ports mapping)
