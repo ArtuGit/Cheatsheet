@@ -92,3 +92,7 @@ Set a tag
 
 ### Docker Hub
 docker push <your-dockerhub-username>/<image-name>:<tag>
+
+### Cleaning
+Purage all!
+`docker system prune --volumes`
