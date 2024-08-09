@@ -1,19 +1,23 @@
+`npm audit`
+Security audit
+
 ## Update all packages
 
 Install:
-npm install -g npm-check-updates
+`npm install -g npm-check-updates`
 
 Check updates (current project):
-ncu
+`ncu`
 
 Check global updates:
-ncu -g 
+`ncu -g`
 
 Update:
-ncu -u
+`ncu -u`
 
 Update, except:
-ncu -x <moduleName>
+`ncu -x <moduleName>`
 
 Filter:
-ncu -f mocha
+`ncu -f mocha`
+
