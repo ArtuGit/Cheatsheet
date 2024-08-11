@@ -94,5 +94,7 @@ Set a tag
 docker push <your-dockerhub-username>/<image-name>:<tag>
 
 ### Cleaning
-Purage all!
+Purge all!!!
+`docker volume prune --all`
+or
 `docker system prune --volumes`
