@@ -76,7 +76,7 @@ List all networks
 `docker network ls`
 
 Remove a network
- `docker network rm NEWWORK_ID`
+ `docker network rm NETWORK_ID`
 
 Remove all unused network
 `docker network prune`
