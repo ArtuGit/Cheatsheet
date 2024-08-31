@@ -8,4 +8,4 @@ Show available version
 Show dependencies
 
 `pnpm add <package-name>@<version>`
-Add dependency
+Add/update dependency
