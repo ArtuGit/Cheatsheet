@@ -1,11 +1,24 @@
-`pnpm view <package>`
+<package> = <package-name>@<version>
+[] - optional
+
 View package info
+`pnpm view <package>`
 
-`pnpm view <package> version`
 Show available version
+`pnpm view <package> version`
 
-`pnpm why <package>`
 Show dependencies
+`pnpm why <package>`
 
-`pnpm add <package-name>@<version>`
 Add/update dependency
+`pnpm add <package>`
+
+Check for any other outdated dependencies:
+`pnpm outdated [packages]`
+
+Update outdated packages
+`pnpm update <packages>`
+
+Update outdated packages to latest
+`pnpm update <packages> --latest`
+
